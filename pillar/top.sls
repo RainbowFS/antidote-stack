@@ -1,3 +1,5 @@
 base:
   '*':
     - placement
+    - docker
+    - monitoring
