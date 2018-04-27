@@ -25,6 +25,12 @@ launch_tickstack:
       - monitoring.telegraf
       - monitoring.nftables
 
+launch_antidote:
+  salt.state:
+    - tgt: "*"
+    - sls:
+      - antidote
+
 
 sync_modules:
   salt.function:
