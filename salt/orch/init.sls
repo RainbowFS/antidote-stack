@@ -3,19 +3,19 @@ install_docker:
     - tgt: "*"
     - sls:
       - docker
-      - dockerimg.unsecure_registry
+      - docker.unsecure_registry
 
 pull_docker_images:
   salt.state:
     - tgt: 'h0'
     - sls:
-      - dockerimg.load_registry
+      - docker.load_registry
 
 disseminate_docker_images:
   salt.state:
     - tgt: '*'
     - sls:
-      - dockerimg.pull_local_registry
+      - docker.pull_local_registry
 
 launch_tickstack:
   salt.state:
