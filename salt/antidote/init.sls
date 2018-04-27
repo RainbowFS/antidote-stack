@@ -1,7 +1,6 @@
 {%- set dns_server = salt["pillar.get"]("bind:config:dns-server:host") -%}
 
 
-
 antidote:
   docker_container.running:
     - image: antidotedb/antidote
@@ -16,3 +15,4 @@ antidote:
       - NODE_NAME: "antidote@{{grains.id}}"
       - IP: {{ salt["mine.get"]("*","network.ip_addrs")[grains.id][0] }}
     - dns: {{ salt["mine.get"]("*","network.ip_addrs")[dns_server][0] }}
+    - dns_search: rainbowfs.fr
