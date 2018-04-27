@@ -1,5 +1,6 @@
 {%- set dns_server = salt["pillar.get"]("bind:config:dns-server:host") -%}
 
+{% if grains.id in salt["pillar.get"]("antidote:nodes") %}
 
 antidote:
   docker_container.running:
@@ -16,3 +17,11 @@ antidote:
       - IP: {{ salt["mine.get"]("*","network.ip_addrs")[grains.id][0] }}
     - dns: {{ salt["mine.get"]("*","network.ip_addrs")[dns_server][0] }}
     - dns_search: rainbowfs.fr
+
+{% endif %}
+
+/root/connect:
+  file.managed:
+    - template: jinja
+    - source: salt://antidote/connect.tpl
+    
