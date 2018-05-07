@@ -17,6 +17,19 @@ disseminate_docker_images:
     - sls:
       - docker.pull_local_registry
 
+
+dns_server:
+  salt.state:
+    - tgt: 'h0'
+    - sls:
+      -  bind9.server
+
+dns_client:
+  salt.state:
+    - tgt: '*'
+    - sls:
+      - bind9.client
+
 launch_tickstack:
   salt.state:
     - tgt: "h0"
