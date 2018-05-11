@@ -35,8 +35,8 @@ launch_tickstack:
     - tgt: "h0"
     - sls:
       - monitoring.tickstack
-      - monitoring.telegraf
       - monitoring.nftables
+      - monitoring.telegraf
 
 launch_antidote:
   salt.state:
@@ -60,4 +60,5 @@ nftables:
     - tgt: "*"
     - sls:
       - monitoring.nftables
+      - monitoring.telegraf
 
