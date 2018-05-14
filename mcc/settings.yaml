@@ -19,13 +19,13 @@ salt_states_repo_branch: master
 salt_state_dest_folder: /srv
 salt_master_precommands:
   - apt-get update
-  - apt-get install git python-pip --yes
+  - apt-get install git python-pip python-git --yes
   - pip install docker netifaces
 salt_master_postcommands:
   - salt-run state.orchestrate orch
 salt_minion_precommands:
   - apt-get update
-  - apt-get install git python-pip --yes
+  - apt-get install git python-pip python-git --yes
   - pip install docker netifaces
 salt_minion_postcommands: []
 salt_master_file_managed:
