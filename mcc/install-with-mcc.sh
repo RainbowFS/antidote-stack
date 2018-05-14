@@ -1,6 +1,6 @@
 
 #staring 5 machines for 2 hours in nancy starting now
-export JOB_ID=`mcc job add nancy 5 for 2h now`
+export JOB_ID=`mcc job add nancy 3 for 2h now`
 
 #wait for the machines to be allocated
 mcc job wait $JOB_ID

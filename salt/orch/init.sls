@@ -20,6 +20,18 @@ disseminate_docker_images:
     - sls:
       - docker.pull_local_registry
 
+
+# launch the monitoring tools
+launch_tickstack:
+  salt.state:
+    - tgt: "h0"
+    - sls:
+      - monitoring.tickstack
+      - monitoring.nftables
+      - monitoring.telegraf
+
+
+
 # configure the salt-maste to be the dns server. This will help having resolvables names for each nodes (including within containers)
 dns_server:
   salt.state:
@@ -34,14 +46,7 @@ dns_client:
     - sls:
       - bind9.client
 
-# launch the monitoring tools
-launch_tickstack:
-  salt.state:
-    - tgt: "h0"
-    - sls:
-      - monitoring.tickstack
-      - monitoring.nftables
-      - monitoring.telegraf
+
 
 # launch antidote on every host configured in the  pillar ./pillar/antidote.sls
 launch_antidote:
