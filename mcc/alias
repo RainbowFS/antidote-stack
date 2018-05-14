@@ -1,0 +1,5 @@
+alias ssh0="ssh -L 5011:172.16.64.69:5011 -L 8888:172.16.64.69:8888 -L 8086:172.16.64.69:0886 -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -i /home/nherbaut/.ssh/g5k root@graphene-69.nancy.g5k"
+alias ssh1="ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -i /home/nherbaut/.ssh/g5k root@graphene-8.nancy.g5k"
+alias ssh2="ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -i /home/nherbaut/.ssh/g5k root@graphene-59.nancy.g5k"
+alias ssh3="ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -i /home/nherbaut/.ssh/g5k root@graphene-79.nancy.g5k"
+alias ssh4="ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -i /home/nherbaut/.ssh/g5k root@graphene-61.nancy.g5k"

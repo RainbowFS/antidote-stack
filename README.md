@@ -51,4 +51,25 @@ to allocate the machines, install everything and configure antidote.
 
 the antidote-stack recipes relies on custom formulas:
 
-*
+* https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/monitoring-formula.git to install the flow-matrix monitoring tools
+* https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/monitoring-formula.git to install docker and configure the registry
+* https://github.com/nherbaut/bind9-formula.git to install and configure the dns server
+
+## orchestration
+
+the installation and configuration and orchestrated in salt/orch/init.sls. It uses the formulas and the antidote state to configure the cluster.
+The antidote cluster is configured through the salt/antidote/init.sls. Moreover, a file containing the command to connect all the antidote instances is generated on every cluster node in /root/connect.
+
+## pillars
+
+several pillars are used to configure the clusters:
+
+```
+.
+├── antidote.sls  --> where to install antidote
+├── dns.sls --> where to install the dns server and which dns server to forward
+├── docker.sls --> which docker image should be pre-provisionned in the registry
+├── monitoring.sls --> where to install the moni
+├── placement.sls --> place each antidote instance named hX.rainbowfs.fr on a specific host
+└── top.sls --> top file to reference all other pillars
+```

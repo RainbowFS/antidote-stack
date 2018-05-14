@@ -9317,3 +9317,876 @@ INFO:mcc_salt: graphene-69.nancy.grid5000.fr > Failed:    8
 INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ------------
 INFO:mcc_salt: graphene-69.nancy.grid5000.fr > Total states run:    10
 INFO:mcc_salt: graphene-69.nancy.grid5000.fr > Total run time:  69.592 s
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > b'[ERROR   ] Exception caught while fetching gitfs remote \'https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/monitoring-formula.git\': Cmd(\'git\') failed due to: exit code(128)
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   cmdline: git fetch -v origin
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   stderr: \'fatal: unable to access \'https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/monitoring-formula.git/\': Could not resolve host: gricad-gitlab.univ-grenoble-alpes.fr\'
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > Traceback (most recent call last):
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/utils/gitfs.py", line 2309, in fetch_remotes
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     if repo.fetch():
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/utils/gitfs.py", line 747, in fetch
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     return self._fetch()
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/utils/gitfs.py", line 1228, in _fetch
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     fetch_results = origin.fetch()
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/git/remote.py", line 752, in fetch
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     res = self._get_fetch_info_from_stderr(proc, progress)
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/git/remote.py", line 638, in _get_fetch_info_from_stderr
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     proc.wait(stderr=stderr_text)
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/git/cmd.py", line 291, in wait
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     raise GitCommandError(self.args, status, errstr)
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > GitCommandError: Cmd(\'git\') failed due to: exit code(128)
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   cmdline: git fetch -v origin
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   stderr: \'fatal: unable to access \'https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/monitoring-formula.git/\': Could not resolve host: gricad-gitlab.univ-grenoble-alpes.fr\'
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [WARNING ] gitfs_global_lock is enabled and update lockfile /var/cache/salt/master/gitfs/a946f10ae2acef22c7c5b9c43fc08591d2d4158e55b59bedc037098e0149f362/.git/update.lk is present for gitfs remote \'https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/docker-formula.git\'. Process 10616 obtained the lock but this process is not running. The update may have been interrupted. If using multi-master with shared gitfs cache, the lock may have been obtained by another master.
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [WARNING ] Update lock file is present for gitfs remote \'https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/docker-formula.git\', skipping. If this warning persists, it is possible that the update process was interrupted, but the lock could also have been manually set. Removing /var/cache/salt/master/gitfs/a946f10ae2acef22c7c5b9c43fc08591d2d4158e55b59bedc037098e0149f362/.git/update.lk or running \'salt-run cache.clear_git_lock gitfs type=update\' will allow updates to continue for this remote.
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [ERROR   ] Exception caught while fetching gitfs remote \'https://github.com/nherbaut/bind9-formula.git\': Cmd(\'git\') failed due to: exit code(128)
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   cmdline: git fetch -v origin
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   stderr: \'fatal: unable to access \'https://github.com/nherbaut/bind9-formula.git/\': Could not resolve host: github.com\'
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > Traceback (most recent call last):
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/utils/gitfs.py", line 2309, in fetch_remotes
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     if repo.fetch():
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/utils/gitfs.py", line 747, in fetch
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     return self._fetch()
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/utils/gitfs.py", line 1228, in _fetch
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     fetch_results = origin.fetch()
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/git/remote.py", line 752, in fetch
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     res = self._get_fetch_info_from_stderr(proc, progress)
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/git/remote.py", line 638, in _get_fetch_info_from_stderr
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     proc.wait(stderr=stderr_text)
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/git/cmd.py", line 291, in wait
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     raise GitCommandError(self.args, status, errstr)
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > GitCommandError: Cmd(\'git\') failed due to: exit code(128)
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   cmdline: git fetch -v origin
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   stderr: \'fatal: unable to access \'https://github.com/nherbaut/bind9-formula.git/\': Could not resolve host: github.com\'
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [ERROR   ] {u\'ret\': {u\'h2\': [u\'The function "state.sls" is running as PID 10356 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\'], u\'h3\': [u\'The function "state.sls" is running as PID 13195 and was started at 2018, May 14 10:40:07.370613 with jid 20180514104007370613\'], u\'h0\': [u"No matching sls found for \'docker\' in env \'base\'", u"No matching sls found for \'docker.unsecure_registry\' in env \'base\'"], u\'h1\': [u\'The function "state.sls" is running as PID 10361 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\'], u\'h4\': [u\'The function "state.sls" is running as PID 10377 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\']}, u\'out\': u\'highstate\'}
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [ERROR   ] {u\'ret\': {u\'h0\': [u"No matching sls found for \'docker.load_registry\' in env \'base\'"]}, u\'out\': u\'highstate\'}
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [WARNING ] Output from salt state not highstate
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [ERROR   ] {u\'ret\': {u\'h2\': [u\'The function "state.sls" is running as PID 10356 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\'], \'h3\': False, u\'h0\': [u"No matching sls found for \'docker.pull_local_registry\' in env \'base\'"], u\'h1\': [u\'The function "state.sls" is running as PID 10361 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\'], u\'h4\': [u\'The function "state.sls" is running as PID 10377 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\']}, u\'out\': u\'highstate\'}
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [ERROR   ] {u\'ret\': {u\'h0\': {u\'file_|-/etc/bind/named.conf.options_|-/etc/bind/named.conf.options_|-managed\': {u\'comment\': u\'Parent directory not present\', u\'pchanges\': {}, u\'name\': u\'/etc/bind/named.conf.options\', u\'start_time\': u\'10:40:52.146750\', u\'result\': False, u\'duration\': 27.706, u\'__run_num__\': 3, u\'__sls__\': u\'bind9.server\', u\'changes\': {}, u\'__id__\': u\'/etc/bind/named.conf.options\'}, u\'file_|-/etc/bind/named.conf.local_|-/etc/bind/named.conf.local_|-managed\': {u\'comment\': u\'Parent directory not present\', u\'pchanges\': {}, u\'name\': u\'/etc/bind/named.conf.local\', u\'start_time\': u\'10:40:52.106730\', u\'result\': False, u\'duration\': 39.855, u\'__run_num__\': 2, u\'__sls__\': u\'bind9.server\', u\'changes\': {}, u\'__id__\': u\'/etc/bind/named.conf.local\'}, u\'pkg_|-bind9_|-bind9_|-installed\': {u\'comment\': u"Problem encountered installing package(s). Additional info follows:\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > \
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > errors:\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     - Running scope as unit: run-ra79bb5f598a44241b962fa29ee3bccea.scope\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >       E: Failed to fetch http://security.debian.org/pool/updates/main/b/bind9/libirs141_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving \'ftp.debian.org\'\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >       E: Failed to fetch http://security.debian.org/pool/updates/main/b/bind9/bind9utils_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving \'ftp.debian.org\'\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >       E: Failed to fetch http://ftp.debian.org/debian/pool/main/n/net-tools/net-tools_1.60+git20161116.90da8a0-1_amd64.deb  Temporary failure resolving \'ftp.debian.org\'\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >       E: Failed to fetch http://security.debian.org/pool/updates/main/b/bind9/bind9_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving \'ftp.debian.org\'\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >       E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?", u\'name\': u\'bind9\', u\'start_time\': u\'10:40:49.937597\', u\'result\': False, u\'duration\': 2163.767, u\'__run_num__\': 1, u\'__sls__\': u\'bind9.server\', u\'changes\': {}, u\'__id__\': u\'bind9\'}, u\'file_|-/etc/bind/rainbowfs.fr.db_|-/etc/bind/rainbowfs.fr.db_|-managed\': {u\'comment\': u\'Parent directory not present\', u\'pchanges\': {}, u\'name\': u\'/etc/bind/rainbowfs.fr.db\', u\'start_time\': u\'10:40:52.174618\', u\'result\': False, u\'duration\': 39.719, u\'__run_num__\': 4, u\'__sls__\': u\'bind9.server\', u\'changes\': {}, u\'__id__\': u\'/etc/bind/rainbowfs.fr.db\'}, u\'service_|-bind9_|-bind9_|-running\': {u\'comment\': u\'One or more requisite failed: bind9.server./etc/bind/rainbowfs.fr.db, bind9.server./etc/bind/named.conf.options, bind9.server./etc/bind/named.conf.local\', u\'__run_num__\': 5, u\'__sls__\': u\'bind9.server\', u\'changes\': {}, u\'result\': False}, u\'pkg_|-dnsmasq_|-dnsmasq_|-removed\': {u\'comment\': u\'All specified packages are already absent\', u\'name\': u\'dnsmasq\', u\'start_time\': u\'10:40:49.866711\', u\'result\': True, u\'duration\': 57.645, u\'__run_num__\': 0, u\'__sls__\': u\'bind9.server\', u\'changes\': {}, u\'__id__\': u\'dnsmasq\'}}}, u\'out\': u\'highstate\'}
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [ERROR   ] {u\'ret\': {u\'h2\': [u\'The function "state.sls" is running as PID 10356 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\'], u\'h3\': [u\'The function "state.sls" is running as PID 13303 and was started at 2018, May 14 10:40:33.338349 with jid 20180514104033338349\'], u\'h1\': [u\'The function "state.sls" is running as PID 10361 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\'], u\'h4\': [u\'The function "state.sls" is running as PID 10377 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\']}, u\'out\': u\'highstate\'}
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [ERROR   ] {u\'ret\': {u\'h0\': {u\'file_|-/var/log/telegraf/_|-/var/log/telegraf/_|-directory\': {u\'comment\': u\'The directory /var/log/telegraf is in the correct state\', u\'pchanges\': {}, u\'name\': u\'/var/log/telegraf/\', u\'start_time\': u\'10:41:05.878786\', u\'result\': True, u\'duration\': 1.327, u\'__run_num__\': 14, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'__id__\': u\'/var/log/telegraf/\'}, u\'docker_image_|-nherbaut/flowmatrix_|-nherbaut/flowmatrix_|-present\': {u\'comment\': u\'An exception occurred in this state: Traceback (most recent call last):\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/state.py", line 1878, in call\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     **cdata[\\\'kwargs\\\'])\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/loader.py", line 1823, in wrapper\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     return f(*args, **kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/states/docker_image.py", line 243, in present\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     image_info = __salt__[\\\'docker.inspect_image\\\'](full_image)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 1816, in inspect_image\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     ret = _client_wrapper(\\\'inspect_image\\\', name)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 414, in wrapper\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     __context__[\\\'docker.client\\\'] = _get_client(timeout=timeout, **kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 378, in _get_client\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     ret = docker.APIClient(**client_kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 154, in __init__\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     self._version = self._retrieve_server_version()\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 179, in _retrieve_server_version\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     \\\'Error while fetching server API version: {0}\\\'.format(e)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > DockerException: Error while fetching server API version: (\\\'Connection aborted.\\\', error(2, \\\'No such file or directory\\\'))\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > \', u\'name\': u\'nherbaut/flowmatrix\', u\'start_time\': u\'10:41:03.517358\', u\'result\': False, u\'duration\': 2.436, u\'__run_num__\': 4, u\'__sls__\': u\'monitoring.tickstack\', u\'changes\': {}, u\'__id__\': u\'nherbaut/flowmatrix\'}, u\'cmd_|-output_|-nft add chain filter output { type filter hook output priority 0 \\\\; }_|-run\': {u\'comment\': u\'Command "nft add chain filter output { type filter hook output priority 0 \\\\; }" run\', u\'name\': u\'nft add chain filter output { type filter hook output priority 0 \\\\; }\', u\'start_time\': u\'10:41:05.811139\', u\'result\': True, u\'duration\': 67.292, u\'__run_num__\': 13, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {u\'pid\': 16070, u\'retcode\': 0, u\'stderr\': u\'\', u\'stdout\': u\'\'}, u\'__id__\': u\'output\'}, u\'pkg_|-nftables_|-nftables_|-installed\': {u\'comment\': u\'All specified packages are already installed\', u\'name\': u\'nftables\', u\'start_time\': u\'10:41:04.678489\', u\'result\': True, u\'duration\': 26.893, u\'__run_num__\': 9, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {}, u\'__id__\': u\'nftables\'}, u\'docker_container_|-nherbaut/flowmatrix_|-flowmatrix_|-running\': {u\'comment\': u\'One or more requisite failed: monitoring.tickstack.influxdb\', u\'__run_num__\': 5, u\'__sls__\': u\'monitoring.tickstack\', u\'changes\': {}, u\'result\': False}, u\'file_|-/etc/telegraf/telegraf.conf_|-/etc/telegraf/telegraf.conf_|-managed\': {u\'comment\': u\'File /etc/telegraf/telegraf.conf is in the correct state\', u\'pchanges\': {}, u\'name\': u\'/etc/telegraf/telegraf.conf\', u\'start_time\': u\'10:41:06.542719\', u\'result\': True, u\'duration\': 55.488, u\'__run_num__\': 16, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'__id__\': u\'/etc/telegraf/telegraf.conf\'}, u\'cmd_|-nft add table filter_|-nft add table filter_|-run\': {u\'comment\': u\'check_cmd determined the state succeeded\', u\'name\': u\'nft add table filter\', u\'start_time\': u\'10:41:04.842808\', u\'__id__\': u\'nft add table filter\', u\'duration\': 908.621, u\'__run_num__\': 11, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {u\'pid\': 16061, u\'retcode\': 0, u\'stderr\': u\'\', u\'stdout\': u\'\'}, u\'result\': True}, u\'pkg_|-apt-transport-https_|-apt-transport-https_|-installed\': {u\'comment\': u\'All specified packages are already installed\', u\'name\': u\'apt-transport-https\', u\'start_time\': u\'10:41:04.519302\', u\'result\': True, u\'duration\': 57.378, u\'__run_num__\': 6, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {}, u\'__id__\': u\'apt-transport-https\'}, u\'service_|-telegraf_|-telegraf_|-running\': {u\'comment\': u\'The service telegraf is already running\', u\'name\': u\'telegraf\', u\'start_time\': u\'10:41:06.639380\', u\'result\': True, u\'duration\': 54.51, u\'__run_num__\': 19, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'__id__\': u\'telegraf\'}, u\'pkg_|-software-properties-common_|-software-properties-common_|-installed\': {u\'comment\': u\'All specified packages are already installed\', u\'name\': u\'software-properties-common\', u\'start_time\': u\'10:41:04.576990\', u\'result\': True, u\'duration\': 26.804, u\'__run_num__\': 7, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {}, u\'__id__\': u\'software-properties-common\'}, u\'docker_container_|-chronograf_|-chronograf_|-running\': {u\'comment\': u\'One or more requisite failed: monitoring.tickstack.influxdb:latest, monitoring.tickstack.chronograf:latest\', u\'__run_num__\': 2, u\'__sls__\': u\'monitoring.tickstack\', u\'changes\': {}, u\'result\': False}, u\'cmd_|-nft flush ruleset_|-nft flush ruleset_|-run\': {u\'comment\': u\'Command "nft flush ruleset" run\', u\'name\': u\'nft flush ruleset\', u\'start_time\': u\'10:41:04.706848\', u\'result\': True, u\'duration\': 135.612, u\'__run_num__\': 10, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {u\'pid\': 16059, u\'retcode\': 0, u\'stderr\': u\'\', u\'stdout\': u\'\'}, u\'__id__\': u\'nft flush ruleset\'}, u\'pkgrepo_|-nftables-ppa_|-deb http://ppa.launchpad.net/ergw/backports/ubuntu xenial main_|-managed\': {u\'comment\': u"Package repo \'deb http://ppa.launchpad.net/ergw/backports/ubuntu xenial main\' already configured", u\'name\': u\'deb http://ppa.launchpad.net/ergw/backports/ubuntu xenial main\', u\'start_time\': u\'10:41:04.605647\', u\'result\': True, u\'duration\': 72.655, u\'__run_num__\': 8, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {}, u\'__id__\': u\'nftables-ppa\'}, u\'docker_image_|-influxdb:latest_|-influxdb:latest_|-present\': {u\'comment\': u\'An exception occurred in this state: Traceback (most recent call last):\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/state.py", line 1878, in call\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     **cdata[\\\'kwargs\\\'])\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/loader.py", line 1823, in wrapper\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     return f(*args, **kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/states/docker_image.py", line 243, in present\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     image_info = __salt__[\\\'docker.inspect_image\\\'](full_image)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 1816, in inspect_image\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     ret = _client_wrapper(\\\'inspect_image\\\', name)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 414, in wrapper\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     __context__[\\\'docker.client\\\'] = _get_client(timeout=timeout, **kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 378, in _get_client\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     ret = docker.APIClient(**client_kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 154, in __init__\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     self._version = self._retrieve_server_version()\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 179, in _retrieve_server_version\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     \\\'Error while fetching server API version: {0}\\\'.format(e)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > DockerException: Error while fetching server API version: (\\\'Connection aborted.\\\', error(2, \\\'No such file or directory\\\'))\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > \', u\'name\': u\'influxdb:latest\', u\'start_time\': u\'10:41:03.512565\', u\'result\': False, u\'duration\': 2.454, u\'__run_num__\': 1, u\'__sls__\': u\'monitoring.tickstack\', u\'changes\': {}, u\'__id__\': u\'influxdb:latest\'}, u\'module_|-telegraf_systemd_unit_|-service.systemctl_reload_|-run\': {u\'comment\': u\'State was not run because none of the onchanges reqs changed\', u\'__run_num__\': 18, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'result\': True}, u\'file_|-telegraf_systemd_unit_|-/etc/systemd/system/telegraf.service_|-managed\': {u\'comment\': u\'File /etc/systemd/system/telegraf.service is in the correct state\', u\'pchanges\': {}, u\'name\': u\'/etc/systemd/system/telegraf.service\', u\'start_time\': u\'10:41:06.598551\', u\'result\': True, u\'duration\': 38.585, u\'__run_num__\': 17, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'__id__\': u\'telegraf_systemd_unit\'}, u\'docker_image_|-chronograf:latest_|-chronograf:latest_|-present\': {u\'comment\': u\'An exception occurred in this state: Traceback (most recent call last):\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/state.py", line 1878, in call\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     **cdata[\\\'kwargs\\\'])\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/loader.py", line 1823, in wrapper\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     return f(*args, **kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/states/docker_image.py", line 243, in present\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     image_info = __salt__[\\\'docker.inspect_image\\\'](full_image)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 1816, in inspect_image\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     ret = _client_wrapper(\\\'inspect_image\\\', name)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 414, in wrapper\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     __context__[\\\'docker.client\\\'] = _get_client(timeout=timeout, **kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 378, in _get_client\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     ret = docker.APIClient(**client_kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 154, in __init__\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     self._version = self._retrieve_server_version()\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 179, in _retrieve_server_version\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     \\\'Error while fetching server API version: {0}\\\'.format(e)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > DockerException: Error while fetching server API version: (\\\'Connection aborted.\\\', error(2, \\\'No such file or directory\\\'))\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > \', u\'name\': u\'chronograf:latest\', u\'start_time\': u\'10:41:03.507121\', u\'result\': False, u\'duration\': 5.202, u\'__run_num__\': 0, u\'__sls__\': u\'monitoring.tickstack\', u\'changes\': {}, u\'__id__\': u\'chronograf:latest\'}, u\'cmd_|-prerouting_|-nft add chain filter prerouting { type filter hook prerouting priority 0 \\\\; }_|-run\': {u\'comment\': u\'Command "nft add chain filter prerouting { type filter hook prerouting priority 0 \\\\; }" run\', u\'name\': u\'nft add chain filter prerouting { type filter hook prerouting priority 0 \\\\; }\', u\'start_time\': u\'10:41:05.752484\', u\'result\': True, u\'duration\': 57.964, u\'__run_num__\': 12, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {u\'pid\': 16068, u\'retcode\': 0, u\'stderr\': u\'\', u\'stdout\': u\'\'}, u\'__id__\': u\'prerouting\'}, u\'file_|-/usr/bin/telegraf_|-/usr/bin/telegraf_|-managed\': {u\'comment\': u\'File /usr/bin/telegraf is in the correct state\', u\'pchanges\': {}, u\'name\': u\'/usr/bin/telegraf\', u\'start_time\': u\'10:41:05.880313\', u\'result\': True, u\'duration\': 662.075, u\'__run_num__\': 15, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'__id__\': u\'/usr/bin/telegraf\'}, u\'docker_container_|-influxdb_|-influxdb_|-running\': {u\'comment\': u\'One or more requisite failed: monitoring.tickstack.influxdb:latest\', u\'__run_num__\': 3, u\'__sls__\': u\'monitoring.tickstack\', u\'changes\': {}, u\'result\': False}}}, u\'out\': u\'highstate\'}
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [ERROR   ] {u\'ret\': {u\'h2\': [u\'The function "state.sls" is running as PID 10356 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\'], u\'h3\': {u\'file_|-/root/connect_|-/root/connect_|-managed\': {u\'comment\': u\'File /root/connect is in the correct state\', u\'pchanges\': {}, u\'name\': u\'/root/connect\', u\'start_time\': u\'10:41:07.096740\', u\'result\': True, u\'duration\': 60.018, u\'__run_num__\': 1, u\'__sls__\': u\'antidote\', u\'changes\': {}, u\'__id__\': u\'/root/connect\'}, u\'docker_container_|-antidote_|-antidote_|-running\': {u\'comment\': u\'An exception occurred in this state: Traceback (most recent call last):\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/state.py", line 1878, in call\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     **cdata[\\\'kwargs\\\'])\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/loader.py", line 1823, in wrapper\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     return f(*args, **kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/states/docker_container.py", line 1676, in running\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     image_id = _resolve_image(ret, image, client_timeout)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/states/docker_container.py", line 193, in _resolve_image\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     image_id = __salt__[\\\'docker.resolve_image_id\\\'](image)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 1884, in resolve_image_id\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     inspect_result = inspect_image(name)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 1816, in inspect_image\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     ret = _client_wrapper(\\\'inspect_image\\\', name)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 414, in wrapper\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     __context__[\\\'docker.client\\\'] = _get_client(timeout=timeout, **kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 378, in _get_client\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     ret = docker.APIClient(**client_kwargs)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 154, in __init__\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     self._version = self._retrieve_server_version()\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >   File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 179, in _retrieve_server_version\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr >     \\\'Error while fetching server API version: {0}\\\'.format(e)\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > DockerException: Error while fetching server API version: (\\\'Connection aborted.\\\', error(2, \\\'No such file or directory\\\'))\
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > \', u\'name\': u\'antidote\', u\'start_time\': u\'10:41:07.087110\', u\'result\': False, u\'duration\': 5.541, u\'__run_num__\': 0, u\'__sls__\': u\'antidote\', u\'changes\': {}, u\'__id__\': u\'antidote\'}}, u\'h1\': [u\'The function "state.sls" is running as PID 10361 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\'], u\'h4\': [u\'The function "state.sls" is running as PID 10377 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\']}, u\'out\': u\'highstate\'}
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [WARNING ] Output from salt state not highstate
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > [ERROR   ] {u\'ret\': {u\'h2\': [u\'The function "state.sls" is running as PID 10356 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\'], \'h3\': False, u\'h0\': {u\'file_|-/var/log/telegraf/_|-/var/log/telegraf/_|-directory\': {u\'comment\': u\'The directory /var/log/telegraf is in the correct state\', u\'pchanges\': {}, u\'name\': u\'/var/log/telegraf/\', u\'start_time\': u\'10:41:25.494788\', u\'result\': True, u\'duration\': 1.294, u\'__run_num__\': 8, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'__id__\': u\'/var/log/telegraf/\'}, u\'cmd_|-output_|-nft add chain filter output { type filter hook output priority 0 \\\\; }_|-run\': {u\'comment\': u\'Command "nft add chain filter output { type filter hook output priority 0 \\\\; }" run\', u\'name\': u\'nft add chain filter output { type filter hook output priority 0 \\\\; }\', u\'start_time\': u\'10:41:25.435103\', u\'result\': True, u\'duration\': 59.332, u\'__run_num__\': 7, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {u\'pid\': 16261, u\'retcode\': 0, u\'stderr\': u\'\', u\'stdout\': u\'\'}, u\'__id__\': u\'output\'}, u\'pkg_|-nftables_|-nftables_|-installed\': {u\'comment\': u\'All specified packages are already installed\', u\'name\': u\'nftables\', u\'start_time\': u\'10:41:24.307722\', u\'result\': True, u\'duration\': 28.196, u\'__run_num__\': 3, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {}, u\'__id__\': u\'nftables\'}, u\'file_|-telegraf_systemd_unit_|-/etc/systemd/system/telegraf.service_|-managed\': {u\'comment\': u\'File /etc/systemd/system/telegraf.service is in the correct state\', u\'pchanges\': {}, u\'name\': u\'/etc/systemd/system/telegraf.service\', u\'start_time\': u\'10:41:26.213184\', u\'result\': True, u\'duration\': 37.7, u\'__run_num__\': 11, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'__id__\': u\'telegraf_systemd_unit\'}, u\'file_|-/etc/telegraf/telegraf.conf_|-/etc/telegraf/telegraf.conf_|-managed\': {u\'comment\': u\'File /etc/telegraf/telegraf.conf is in the correct state\', u\'pchanges\': {}, u\'name\': u\'/etc/telegraf/telegraf.conf\', u\'start_time\': u\'10:41:26.157055\', u\'result\': True, u\'duration\': 55.775, u\'__run_num__\': 10, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'__id__\': u\'/etc/telegraf/telegraf.conf\'}, u\'cmd_|-nft add table filter_|-nft add table filter_|-run\': {u\'comment\': u\'check_cmd determined the state succeeded\', u\'name\': u\'nft add table filter\', u\'start_time\': u\'10:41:24.466815\', u\'__id__\': u\'nft add table filter\', u\'duration\': 896.586, u\'__run_num__\': 5, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {u\'pid\': 16252, u\'retcode\': 0, u\'stderr\': u\'\', u\'stdout\': u\'\'}, u\'result\': True}, u\'pkg_|-apt-transport-https_|-apt-transport-https_|-installed\': {u\'comment\': u\'All specified packages are already installed\', u\'name\': u\'apt-transport-https\', u\'start_time\': u\'10:41:24.147181\', u\'result\': True, u\'duration\': 58.154, u\'__run_num__\': 0, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {}, u\'__id__\': u\'apt-transport-https\'}, u\'pkg_|-software-properties-common_|-software-properties-common_|-installed\': {u\'comment\': u\'All specified packages are already installed\', u\'name\': u\'software-properties-common\', u\'start_time\': u\'10:41:24.205641\', u\'result\': True, u\'duration\': 28.202, u\'__run_num__\': 1, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {}, u\'__id__\': u\'software-properties-common\'}, u\'service_|-telegraf_|-telegraf_|-running\': {u\'comment\': u\'The service telegraf is already running\', u\'name\': u\'telegraf\', u\'start_time\': u\'10:41:26.252883\', u\'result\': True, u\'duration\': 54.503, u\'__run_num__\': 13, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'__id__\': u\'telegraf\'}, u\'cmd_|-nft flush ruleset_|-nft flush ruleset_|-run\': {u\'comment\': u\'Command "nft flush ruleset" run\', u\'name\': u\'nft flush ruleset\', u\'start_time\': u\'10:41:24.337327\', u\'result\': True, u\'duration\': 129.131, u\'__run_num__\': 4, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {u\'pid\': 16250, u\'retcode\': 0, u\'stderr\': u\'\', u\'stdout\': u\'\'}, u\'__id__\': u\'nft flush ruleset\'}, u\'module_|-telegraf_systemd_unit_|-service.systemctl_reload_|-run\': {u\'comment\': u\'State was not run because none of the onchanges reqs changed\', u\'__run_num__\': 12, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'result\': True}, u\'pkgrepo_|-nftables-ppa_|-deb http://ppa.launchpad.net/ergw/backports/ubuntu xenial main_|-managed\': {u\'comment\': u"Package repo \'deb http://ppa.launchpad.net/ergw/backports/ubuntu xenial main\' already configured", u\'name\': u\'deb http://ppa.launchpad.net/ergw/backports/ubuntu xenial main\', u\'start_time\': u\'10:41:24.235562\', u\'result\': True, u\'duration\': 71.979, u\'__run_num__\': 2, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {}, u\'__id__\': u\'nftables-ppa\'}, u\'cmd_|-prerouting_|-nft add chain filter prerouting { type filter hook prerouting priority 0 \\\\; }_|-run\': {u\'comment\': u\'Command "nft add chain filter prerouting { type filter hook prerouting priority 0 \\\\; }" run\', u\'name\': u\'nft add chain filter prerouting { type filter hook prerouting priority 0 \\\\; }\', u\'start_time\': u\'10:41:25.364394\', u\'result\': True, u\'duration\': 70.096, u\'__run_num__\': 6, u\'__sls__\': u\'monitoring.nftables\', u\'changes\': {u\'pid\': 16259, u\'retcode\': 0, u\'stderr\': u\'\', u\'stdout\': u\'\'}, u\'__id__\': u\'prerouting\'}, u\'file_|-/usr/bin/telegraf_|-/usr/bin/telegraf_|-managed\': {u\'comment\': u\'File /usr/bin/telegraf is in the correct state\', u\'pchanges\': {}, u\'name\': u\'/usr/bin/telegraf\', u\'start_time\': u\'10:41:25.496268\', u\'result\': True, u\'duration\': 660.448, u\'__run_num__\': 9, u\'__sls__\': u\'monitoring.telegraf\', u\'changes\': {}, u\'__id__\': u\'/usr/bin/telegraf\'}}, u\'h1\': [u\'The function "state.sls" is running as PID 10361 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\'], u\'h4\': [u\'The function "state.sls" is running as PID 10377 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796\']}, u\'out\': u\'highstate\'}
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > '
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr < 'salt-run state.orchestrate orch'
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > b'h0_master:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >           ID: install_docker
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Function: salt.state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >       Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Comment: Run failed on minions: h2, h3, h0, h1, h4
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Started: 10:40:25.051990
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Duration: 7835.121 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h2:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10356 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h3:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 13195 and was started at 2018, May 14 10:40:07.370613 with jid 20180514104007370613
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h0:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   No matching sls found for \'docker\' in env \'base\'
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   No matching sls found for \'docker.unsecure_registry\' in env \'base\'
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h1:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10361 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h4:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10377 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >           ID: pull_docker_images
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Function: salt.state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >       Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Comment: Run failed on minions: h0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Started: 10:40:32.887298
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Duration: 405.437 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h0:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   No matching sls found for \'docker.load_registry\' in env \'base\'
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >           ID: disseminate_docker_images
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Function: salt.state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >       Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Comment: Run failed on minions: h2, h3, h0, h1, h4
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Started: 10:40:33.292910
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Duration: 15153.211 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h2:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10356 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h3:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h0:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   No matching sls found for \'docker.pull_local_registry\' in env \'base\'
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h1:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10361 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h4:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10377 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >           ID: dns_server
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Function: salt.state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >       Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Comment: Run failed on minions: h0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Started: 10:40:48.446304
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Duration: 3775.324 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h0:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: dnsmasq
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: pkg.removed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: All specified packages are already absent
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:40:49.866711
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 57.645 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: bind9
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: pkg.installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Problem encountered installing package(s). Additional info follows:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             errors:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 - Running scope as unit: run-ra79bb5f598a44241b962fa29ee3bccea.scope
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                   E: Failed to fetch http://security.debian.org/pool/updates/main/b/bind9/libirs141_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving \'ftp.debian.org\'
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                   E: Failed to fetch http://security.debian.org/pool/updates/main/b/bind9/bind9utils_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving \'ftp.debian.org\'
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                   E: Failed to fetch http://ftp.debian.org/debian/pool/main/n/net-tools/net-tools_1.60+git20161116.90da8a0-1_amd64.deb  Temporary failure resolving \'ftp.debian.org\'
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                   E: Failed to fetch http://security.debian.org/pool/updates/main/b/bind9/bind9_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving \'ftp.debian.org\'
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                   E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:40:49.937597
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 2163.767 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: /etc/bind/named.conf.local
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Parent directory not present
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:40:52.106730
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 39.855 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: /etc/bind/named.conf.options
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Parent directory not present
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:40:52.146750
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 27.706 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: /etc/bind/rainbowfs.fr.db
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Parent directory not present
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:40:52.174618
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 39.719 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: bind9
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: service.running
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: One or more requisite failed: bind9.server./etc/bind/rainbowfs.fr.db, bind9.server./etc/bind/named.conf.options, bind9.server./etc/bind/named.conf.local
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Summary for h0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ------------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Succeeded: 1
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Failed:    5
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ------------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total states run:     6
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total run time:   2.329 s
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >           ID: dns_client
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Function: salt.state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >       Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Comment: Run failed on minions: h2, h3, h1, h4
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Started: 10:40:52.221803
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Duration: 10768.081 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h2:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10356 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h3:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 13303 and was started at 2018, May 14 10:40:33.338349 with jid 20180514104033338349
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h1:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10361 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h4:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10377 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >           ID: launch_tickstack
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Function: salt.state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >       Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Comment: Run failed on minions: h0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Started: 10:41:02.990060
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Duration: 3715.608 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h0:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: chronograf:latest
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: docker_image.present
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: An exception occurred in this state: Traceback (most recent call last):
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/state.py", line 1878, in call
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 **cdata[\'kwargs\'])
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/loader.py", line 1823, in wrapper
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 return f(*args, **kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/states/docker_image.py", line 243, in present
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 image_info = __salt__[\'docker.inspect_image\'](full_image)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 1816, in inspect_image
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 ret = _client_wrapper(\'inspect_image\', name)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 414, in wrapper
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 __context__[\'docker.client\'] = _get_client(timeout=timeout, **kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 378, in _get_client
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 ret = docker.APIClient(**client_kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 154, in __init__
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 self._version = self._retrieve_server_version()
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 179, in _retrieve_server_version
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 \'Error while fetching server API version: {0}\'.format(e)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             DockerException: Error while fetching server API version: (\'Connection aborted.\', error(2, \'No such file or directory\'))
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:03.507121
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 5.202 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: influxdb:latest
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: docker_image.present
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: An exception occurred in this state: Traceback (most recent call last):
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/state.py", line 1878, in call
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 **cdata[\'kwargs\'])
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/loader.py", line 1823, in wrapper
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 return f(*args, **kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/states/docker_image.py", line 243, in present
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 image_info = __salt__[\'docker.inspect_image\'](full_image)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 1816, in inspect_image
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 ret = _client_wrapper(\'inspect_image\', name)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 414, in wrapper
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 __context__[\'docker.client\'] = _get_client(timeout=timeout, **kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 378, in _get_client
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 ret = docker.APIClient(**client_kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 154, in __init__
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 self._version = self._retrieve_server_version()
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 179, in _retrieve_server_version
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 \'Error while fetching server API version: {0}\'.format(e)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             DockerException: Error while fetching server API version: (\'Connection aborted.\', error(2, \'No such file or directory\'))
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:03.512565
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 2.454 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: chronograf
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: docker_container.running
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: One or more requisite failed: monitoring.tickstack.influxdb:latest, monitoring.tickstack.chronograf:latest
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: influxdb
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: docker_container.running
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: One or more requisite failed: monitoring.tickstack.influxdb:latest
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: nherbaut/flowmatrix
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: docker_image.present
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: An exception occurred in this state: Traceback (most recent call last):
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/state.py", line 1878, in call
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 **cdata[\'kwargs\'])
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/loader.py", line 1823, in wrapper
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 return f(*args, **kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/states/docker_image.py", line 243, in present
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 image_info = __salt__[\'docker.inspect_image\'](full_image)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 1816, in inspect_image
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 ret = _client_wrapper(\'inspect_image\', name)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 414, in wrapper
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 __context__[\'docker.client\'] = _get_client(timeout=timeout, **kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 378, in _get_client
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 ret = docker.APIClient(**client_kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 154, in __init__
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 self._version = self._retrieve_server_version()
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 179, in _retrieve_server_version
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 \'Error while fetching server API version: {0}\'.format(e)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             DockerException: Error while fetching server API version: (\'Connection aborted.\', error(2, \'No such file or directory\'))
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:03.517358
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 2.436 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: nherbaut/flowmatrix
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: docker_container.running
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: flowmatrix
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: One or more requisite failed: monitoring.tickstack.influxdb
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: apt-transport-https
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: pkg.installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: All specified packages are already installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:04.519302
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 57.378 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: software-properties-common
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: pkg.installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: All specified packages are already installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:04.576990
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 26.804 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: nftables-ppa
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: pkgrepo.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: deb http://ppa.launchpad.net/ergw/backports/ubuntu xenial main
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Package repo \'deb http://ppa.launchpad.net/ergw/backports/ubuntu xenial main\' already configured
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:04.605647
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 72.655 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: nftables
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: pkg.installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: All specified packages are already installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:04.678489
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 26.893 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: nft flush ruleset
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: cmd.run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Command "nft flush ruleset" run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:04.706848
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 135.612 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             pid:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 16059
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             retcode:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stderr:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stdout:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: nft add table filter
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: cmd.run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: check_cmd determined the state succeeded
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:04.842808
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 908.621 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             pid:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 16061
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             retcode:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stderr:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stdout:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: prerouting
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: cmd.run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: nft add chain filter prerouting { type filter hook prerouting priority 0 \\; }
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Command "nft add chain filter prerouting { type filter hook prerouting priority 0 \\; }" run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:05.752484
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 57.964 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             pid:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 16068
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             retcode:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stderr:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stdout:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: output
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: cmd.run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: nft add chain filter output { type filter hook output priority 0 \\; }
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Command "nft add chain filter output { type filter hook output priority 0 \\; }" run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:05.811139
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 67.292 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             pid:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 16070
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             retcode:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stderr:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stdout:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: /var/log/telegraf/
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.directory
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: The directory /var/log/telegraf is in the correct state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:05.878786
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 1.327 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: /usr/bin/telegraf
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: File /usr/bin/telegraf is in the correct state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:05.880313
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 662.075 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: /etc/telegraf/telegraf.conf
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: File /etc/telegraf/telegraf.conf is in the correct state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:06.542719
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 55.488 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: telegraf_systemd_unit
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: /etc/systemd/system/telegraf.service
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: File /etc/systemd/system/telegraf.service is in the correct state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:06.598551
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 38.585 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: telegraf_systemd_unit
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: module.run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: service.systemctl_reload
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: State was not run because none of the onchanges reqs changed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: telegraf
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: service.running
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: The service telegraf is already running
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:06.639380
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 54.51 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Summary for h0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -------------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Succeeded: 14 (changed=4)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Failed:     6
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -------------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total states run:     20
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total run time:    2.175 s
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >           ID: launch_antidote
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Function: salt.state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >       Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Comment: Run failed on minions: h2, h3, h1, h4
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Started: 10:41:06.705845
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Duration: 456.221 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h2:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10356 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h3:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: antidote
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: docker_container.running
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: An exception occurred in this state: Traceback (most recent call last):
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/state.py", line 1878, in call
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 **cdata[\'kwargs\'])
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/loader.py", line 1823, in wrapper
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 return f(*args, **kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/states/docker_container.py", line 1676, in running
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 image_id = _resolve_image(ret, image, client_timeout)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/states/docker_container.py", line 193, in _resolve_image
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 image_id = __salt__[\'docker.resolve_image_id\'](image)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 1884, in resolve_image_id
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 inspect_result = inspect_image(name)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 1816, in inspect_image
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 ret = _client_wrapper(\'inspect_image\', name)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 414, in wrapper
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 __context__[\'docker.client\'] = _get_client(timeout=timeout, **kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/lib/python2.7/dist-packages/salt/modules/dockermod.py", line 378, in _get_client
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 ret = docker.APIClient(**client_kwargs)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 154, in __init__
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 self._version = self._retrieve_server_version()
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                               File "/usr/local/lib/python2.7/dist-packages/docker/api/client.py", line 179, in _retrieve_server_version
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 \'Error while fetching server API version: {0}\'.format(e)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             DockerException: Error while fetching server API version: (\'Connection aborted.\', error(2, \'No such file or directory\'))
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:07.087110
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 5.541 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: /root/connect
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: File /root/connect is in the correct state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:07.096740
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 60.018 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Summary for h3
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ------------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Succeeded: 1
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Failed:    1
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ------------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total states run:     2
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total run time:  65.559 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h1:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10361 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h4:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10377 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >           ID: sync_modules
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Function: salt.function
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >         Name: saltutil.sync_all
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >       Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Comment: Function ran successfully. Function saltutil.sync_all ran on h2, h3, h0, h1, h4.
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Started: 10:41:07.162242
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Duration: 470.243 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h2:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Summary for h2
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Succeeded: 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Failed:   0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total states run:    0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total run time:  0.000 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h3:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Summary for h3
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Succeeded: 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Failed:   0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total states run:    0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total run time:  0.000 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h0:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Summary for h0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Succeeded: 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Failed:   0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total states run:    0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total run time:  0.000 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h1:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Summary for h1
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Succeeded: 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Failed:   0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total states run:    0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total run time:  0.000 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h4:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Summary for h4
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Succeeded: 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Failed:   0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total states run:    0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total run time:  0.000 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >           ID: refresh_mine
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Function: salt.function
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >         Name: mine.update
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >       Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Comment: Function ran successfully. Function mine.update ran on h0.
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Started: 10:41:07.632668
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Duration: 15083.295 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h0:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >           ID: nftables
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Function: salt.state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >       Result: False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Comment: Run failed on minions: h2, h3, h1, h4
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Started: 10:41:22.716143
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >     Duration: 15170.538 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >      Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h2:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10356 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h3:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   False
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h0:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: apt-transport-https
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: pkg.installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: All specified packages are already installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:24.147181
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 58.154 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: software-properties-common
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: pkg.installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: All specified packages are already installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:24.205641
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 28.202 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: nftables-ppa
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: pkgrepo.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: deb http://ppa.launchpad.net/ergw/backports/ubuntu xenial main
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Package repo \'deb http://ppa.launchpad.net/ergw/backports/ubuntu xenial main\' already configured
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:24.235562
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 71.979 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: nftables
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: pkg.installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: All specified packages are already installed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:24.307722
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 28.196 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: nft flush ruleset
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: cmd.run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Command "nft flush ruleset" run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:24.337327
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 129.131 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             pid:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 16250
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             retcode:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stderr:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stdout:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: nft add table filter
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: cmd.run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: check_cmd determined the state succeeded
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:24.466815
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 896.586 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             pid:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 16252
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             retcode:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stderr:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stdout:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: prerouting
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: cmd.run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: nft add chain filter prerouting { type filter hook prerouting priority 0 \\; }
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Command "nft add chain filter prerouting { type filter hook prerouting priority 0 \\; }" run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:25.364394
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 70.096 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             pid:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 16259
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             retcode:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stderr:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stdout:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: output
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: cmd.run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: nft add chain filter output { type filter hook output priority 0 \\; }
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: Command "nft add chain filter output { type filter hook output priority 0 \\; }" run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:25.435103
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 59.332 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             pid:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 16261
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             retcode:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                                 0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stderr:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                             stdout:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: /var/log/telegraf/
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.directory
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: The directory /var/log/telegraf is in the correct state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:25.494788
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 1.294 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: /usr/bin/telegraf
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: File /usr/bin/telegraf is in the correct state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:25.496268
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 660.448 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: /etc/telegraf/telegraf.conf
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: File /etc/telegraf/telegraf.conf is in the correct state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:26.157055
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 55.775 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: telegraf_systemd_unit
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: file.managed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: /etc/systemd/system/telegraf.service
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: File /etc/systemd/system/telegraf.service is in the correct state
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:26.213184
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 37.7 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: telegraf_systemd_unit
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: module.run
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                       Name: service.systemctl_reload
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: State was not run because none of the onchanges reqs changed
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                         ID: telegraf
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Function: service.running
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                     Result: True
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Comment: The service telegraf is already running
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Started: 10:41:26.252883
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Duration: 54.503 ms
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                    Changes:   
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Summary for h0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -------------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Succeeded: 14 (changed=4)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Failed:     0
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               -------------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total states run:     14
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               Total run time:    2.151 s
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h1:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10361 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               h4:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   Data failed to compile:
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >               ----------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr >                   The function "state.sls" is running as PID 10377 and was started at 2018, May 14 10:38:04.564796 with jid 20180514103804564796
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > Summary for h0_master
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ------------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > Succeeded: 2 (changed=4)
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > Failed:    8
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > ------------
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > Total states run:    10
+INFO:mcc_salt: graphene-69.nancy.grid5000.fr > Total run time:  72.833 s
+DEBUG:root:https://api.grid5000.fr/stable/sites/nancy/jobs/1562913
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.grid5000.fr
+DEBUG:urllib3.connectionpool:https://api.grid5000.fr:443 "GET /stable/sites/nancy/jobs/1562913 HTTP/1.1" 200 1469
+DEBUG:root:https://api.grid5000.fr//3.0/sites/nancy/jobs/1562913
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.grid5000.fr
+DEBUG:urllib3.connectionpool:https://api.grid5000.fr:443 "GET //3.0/sites/nancy/jobs/1562913 HTTP/1.1" 200 1469
+WARNING:mcc_salt: graphene-69.nancy.grid5000.fr > b''
