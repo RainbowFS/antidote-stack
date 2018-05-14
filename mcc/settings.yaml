@@ -22,6 +22,10 @@ salt_master_precommands:
   - apt-get install git python-pip python-git --yes
   - pip install docker netifaces
 salt_master_postcommands:
+  - mkdir /srv/formulas
+  - git clone https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/monitoring-formula.git /srv/formulas/monitoring-formula
+  - git clone https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/docker-formula.git /srv/formulas/docker-formula
+  - git clone https://github.com/nherbaut/bind9-formula.git /srv/formulas/bind9-formula
   - salt-run state.orchestrate orch
 salt_minion_precommands:
   - apt-get update
@@ -33,4 +37,3 @@ salt_master_file_managed:
     dst: /srv/pillar/placement.sls
   - src: ./antidote.sls
     dst: /srv/pillar/antidote.sls
-
