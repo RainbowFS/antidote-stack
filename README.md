@@ -4,6 +4,8 @@ This repository contains a collection of salt receipes that install and configur
 
 # where to start
 
+first, decide whether you want to install and configure salt and this repository manually (installing salt) or do it automatically (installing with mcc)
+
 ## installing salt
 
 salt is a tool used to define a infrastructure as a document, and sync the real infrastructure with the document by installing component, launching service, writing configuration files and so on.
@@ -29,7 +31,7 @@ salt-run state.orchestrate orch
 
 will install and configure everything to run antidote.
 
-## installing salt with mcc
+## installing with mcc
 
 mcc (multi-cloud console) is a tool that aims at making the test environment provisionning easier, working with grid5000 for the moment but expensible to any cloud provider through libcloud.
 mcc uses a settings.yaml file to gather all the information required to complete the steps.
