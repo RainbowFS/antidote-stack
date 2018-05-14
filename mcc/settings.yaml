@@ -22,11 +22,15 @@ salt_master_precommands:
   - apt-get install git python-pip --yes
   - pip install docker netifaces
 salt_master_postcommands:
-  - salt-run state.orchestrate orch.experiment
+  - salt-run state.orchestrate orch
 salt_minion_precommands:
   - apt-get update
   - apt-get install git python-pip --yes
   - pip install docker netifaces
 salt_minion_postcommands: []
-
+salt_master_file_managed:
+  - src: ./placement.sls
+    dst: /srv/pillar/placement.sls
+  - src: ./antidote.sls
+    dst: /srv/pillar/antidote.sls
 
