@@ -2,6 +2,14 @@
 
 {% if grains.id in salt["pillar.get"]("antidote:nodes") %}
 
+
+/root/antidote-contrib/join_nodes.erl:
+  file.managed:
+    - template: jinja
+    - makedirs: True
+    - source: salt://antidote/join_nodes.erl
+    - mode: 755
+
 antidote:
   docker_container.running:
     - image: antidotedb/antidote
@@ -17,6 +25,7 @@ antidote:
       - IP: {{ salt["mine.get"]("*","network.ip_addrs")[grains.id][0] }}
     - dns: {{ salt["mine.get"]("*","network.ip_addrs")[dns_server][0] }}
     - dns_search: rainbowfs.fr
+    - binds: /root/antidote-contrib:/root/:ro
 
 {% endif %}
 
