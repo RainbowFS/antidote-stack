@@ -7,7 +7,5 @@ placement:
         host: h1
     - h2.rainbowfs.fr:
         host: h2
-    - h3.rainbowfs.fr:
-        host: h3
 
 
