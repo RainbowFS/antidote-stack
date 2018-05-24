@@ -1,12 +1,16 @@
 {% set dcs=salt['pillar.get']("antidote:datacenters") %}
 {% set executor_node=salt['pillar.get']("antidote:executor_node") %}
 {% set host_confs={} %}
+{% set host_confs_leader_only=[] %}
+{% do host_confs_leader_only.append('\'script@%s\''%executor_node) %}
 {% for k, hosts in dcs.items() %}
   {% set host_conf=[] %}
   {% do host_conf.append('\'script@%s\''%executor_node) %}
   {% for host in hosts %}
-    {% do host_conf.append('\'antidote@%s\''%host) %}
+    {% do host_conf.append('\'antidote@%s\''%salt["mine.get"]("*","network.ip_addrs")[host][0]) %}
   {% endfor %}
+
+  {% do host_confs_leader_only.append('\'antidote@%s\''%salt["mine.get"]("*","network.ip_addrs")[hosts[0]][0]) %}
   {% do host_confs.update({k:host_conf})%}
 
 {% endfor %}

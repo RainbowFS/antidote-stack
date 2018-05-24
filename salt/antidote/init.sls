@@ -20,8 +20,8 @@ antidote:
       - 8099:8099
       - 9100:9100
     - environment:
-      - SHORT_NAME: "true"
-      - NODE_NAME: "antidote@{{grains.id}}"
+#      - SHORT_NAME: "true"
+      - NODE_NAME: "antidote@{{ salt["mine.get"]("*","network.ip_addrs")[grains.id][0] }}"
       - IP: {{ salt["mine.get"]("*","network.ip_addrs")[grains.id][0] }}
     - dns: {{ salt["mine.get"]("*","network.ip_addrs")[dns_server][0] }}
     - dns_search: rainbowfs.fr
