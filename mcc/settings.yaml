@@ -10,8 +10,8 @@ grid5k_ProxyCommand_domain_alias: g5k
 environment: debian9-x64-base
 default_site: nancy
 default_queue: default
-salt_host_control_iface: eth0
-salt_host_data_iface: eth0
+salt_host_control_iface: enp3s0
+salt_host_data_iface: enp3s0
 salt_minion_template: ./minion.tpl
 salt_master_template: ./master.tpl
 salt_states_repo_url: https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/antidote-stack
@@ -25,8 +25,8 @@ salt_master_postcommands:
   - mkdir /srv/formulas
   - git clone https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/monitoring-formula.git /srv/formulas/monitoring-formula
   - git clone https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/docker-formula.git /srv/formulas/docker-formula
-  - git clone https://github.com/nherbaut/bind9-formula.git /srv/formulas/bind9-formula /srv/formulas/bind9-formula
-  - salt-run state.orchestrate orch
+  - git clone https://github.com/nherbaut/bind9-formula.git /srv/formulas/bind9-formula 
+#  - salt-run state.orchestrate orch
 salt_minion_precommands:
   - apt-get update
   - apt-get install git python-pip python-git --yes
@@ -37,3 +37,13 @@ salt_master_file_managed:
     dst: /srv/pillar/placement.sls
   - src: ./antidote.sls
     dst: /srv/pillar/antidote.sls
+g5k_interface_name_mapping:
+  graoully: eno1
+  graphene: enp3s0
+  graphique: eno1
+  graphite: eno1
+  grele: eno1 
+  griffon: enp15s0f0
+  grimani: eno1
+  grimoire: eno1
+  grisou: eno1
