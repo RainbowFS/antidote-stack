@@ -75,3 +75,18 @@ nftables:
       - monitoring.nftables
       - monitoring.telegraf
 
+
+# create the datacenters from antidote.sls
+
+create dc:
+  salt.state:
+    - tgt: "h0"
+    - sls:
+      - antidote.dc
+
+connect dc:
+  salt.state:
+    - tgt: "h0"
+    - sls:
+      - antidote.dc-connect
+    
