@@ -1,3 +1,6 @@
+
+
+
 #install docker and configure docker damemon to allow unsecure registry to make user nodes can download docker images from the salt-master
 install_docker:
   salt.state:
