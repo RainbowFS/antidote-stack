@@ -26,7 +26,7 @@ salt_master_postcommands:
   - git clone https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/monitoring-formula.git /srv/formulas/monitoring-formula
   - git clone https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/docker-formula.git /srv/formulas/docker-formula
   - git clone https://github.com/nherbaut/bind9-formula.git /srv/formulas/bind9-formula 
-  - salt-run state.orchestrate orch
+#  - salt-run state.orchestrate orch
 salt_minion_precommands:
   - apt-get update
   - apt-get install git python-pip python-git --yes
