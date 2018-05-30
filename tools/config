@@ -1,0 +1,50 @@
+const config = {
+    antidote: [
+
+	
+        {
+		host: '172.16.65.17',
+            port: 8087
+        },
+	
+        {
+		host: '172.16.65.16',
+            port: 8087
+        },
+	
+        {
+		host: '172.16.71.4',
+            port: 8087
+        },
+	
+        {
+		host: '172.16.68.4',
+            port: 8087
+        },
+	
+        {
+		host: '172.16.65.27',
+            port: 8087
+        },
+	
+        {
+		host: '172.16.65.19',
+            port: 8087
+        },
+	
+        {
+		host: '172.16.65.29',
+            port: 8087
+        },
+	
+        {
+		host: '172.16.71.1',
+            port: 8087
+        },
+	
+    ],
+    partitionCmd: './net_part.sh'
+};
+
+module.exports = config;
+
