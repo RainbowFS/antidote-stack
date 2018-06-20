@@ -35,21 +35,6 @@ launch_tickstack:
 
 
 
-# configure the salt-maste to be the dns server. This will help having resolvables names for each nodes (including within containers)
-dns_server:
-  salt.state:
-    - tgt: 'h0'
-    - sls:
-      -  bind9.server
-
-# configure every node to use the salt-master as a dns server
-dns_client:
-  salt.state:
-    - tgt: '*'
-    - sls:
-      - bind9.client
-
-
 
 # launch antidote on every host configured in the  pillar ./pillar/antidote.sls
 launch_antidote:

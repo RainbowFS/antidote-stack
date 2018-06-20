@@ -10,11 +10,9 @@ grid5k_ProxyCommand_domain_alias: g5k
 environment: debian9-x64-base
 default_site: nancy
 default_queue: default
-salt_host_control_iface: enp3s0
-salt_host_data_iface: enp3s0
 salt_minion_template: ./minion.tpl
 salt_master_template: ./master.tpl
-salt_states_repo_url: https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/antidote-stack
+salt_states_repo_url: https://github.com/RainbowFS/antidote-stack.git
 salt_states_repo_branch: master
 salt_state_dest_folder: /srv
 salt_master_precommands:
@@ -23,9 +21,8 @@ salt_master_precommands:
   - pip install docker netifaces
 salt_master_postcommands:
   - mkdir -p /srv/formulas
-  - git clone https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/monitoring-formula.git /srv/formulas/monitoring-formula
-  - git clone https://gricad-gitlab.univ-grenoble-alpes.fr/herbautn/docker-formula.git /srv/formulas/docker-formula
-  - git clone https://github.com/nherbaut/bind9-formula.git /srv/formulas/bind9-formula 
+  - git clone https://github.com/RainbowFS/monitoring-formula.git /srv/formulas/monitoring-formula
+  - git clone https://github.com/RainbowFS/docker-formula.git /srv/formulas/docker-formula
 #  - salt-run state.orchestrate orch
 salt_minion_precommands:
   - apt-get update
@@ -33,8 +30,6 @@ salt_minion_precommands:
   - pip install docker netifaces
 salt_minion_postcommands: []
 salt_master_file_managed:
-  - src: ./placement.sls
-    dst: /srv/pillar/placement.sls
   - src: ./antidote.sls
     dst: /srv/pillar/antidote.sls
 g5k_interface_name_mapping:
