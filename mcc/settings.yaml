@@ -1,5 +1,5 @@
 login: nherbaut
-pwd: azerty1A;
+pwd: 
 api-backend: https://api.grid5000.fr/
 ssh_key_file_public: /home/nherbaut/.ssh/id_rsa.pub
 ssh_key_file_private: /home/nherbaut/.ssh/id_rsa
